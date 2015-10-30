@@ -1,0 +1,130 @@
+layer-image {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+     /*TODO delete*/
+}
+
+div.test {
+    width: 2px;
+    height: 2px;
+    background: red;
+    position: absolute;
+    z-index: 10000;
+}
+
+layer-image .glass-wrapper {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+layer-image .glass-wrapper .glass {
+    cursor: -webkit-grab;
+}
+
+layer-image .glass-wrapper .red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 42;
+}
+
+layer-image .glass-wrapper .gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 42;
+    box-shadow: 0 0 0 5000px rgba(255, 5, 23, 0.3);
+}
+
+layer-image .glass-wrapper .white-border:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+layer-image .glass-wrapper .black-border:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid black;
+}
+
+layer-image img.cropped-image {
+    position: absolute;
+    z-index: 41;
+    display: block !important;
+}
+
+layer-image .control-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+layer-image .control-wrapper div .slider {
+    z-index: 44;
+}
+
+layer-image .control-wrapper div .slider .slider-selection {
+    background-image: linear-gradient(to bottom, black 0, black 100%);
+    background-image: -webkit-linear-gradient(to bottom, black 0, black 100%);
+    background-image: -o-linear-gradient(to bottom, black 0, black 100%);
+    background-image: -moz-linear-gradient(to bottom, black 0, black 100%);
+}
+
+layer-image .control-wrapper .control-message {
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+layer-image .phone-layer {
+    position: absolute;
+    border: 1px solid white;
+    z-index: 46;
+}
+
+layer-image .phone-layer .phone-top-additional {
+    position: absolute;
+    border: 1px solid white;
+}
+
+layer-image .phone-layer .phone-camera {
+    border-radius: 50%;
+}
+
+layer-image .phone-layer .phone-dynamic {
+    border-radius: 7px 7px;
+}
+
+layer-image .phone-layer .phone-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    cursor: -webkit-grab;
+}
+
+layer-image .phone-layer .phone-button {
+    position: absolute;
+    border: 1px white solid;
+    border-radius: 50%;
+}
+
+layer-image .phone-layer .phone-button .phone-sub-button {
+    position: absolute;
+    border: 1px white solid;
+}
